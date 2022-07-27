@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2022-7-18 15:59:00-0400
 inline: true
 ---
 
-A simple inline announcement.
+I will be joining [USC](https://usc.edu) as a PhD Student in Fall 2022!
