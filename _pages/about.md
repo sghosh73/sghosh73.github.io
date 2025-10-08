@@ -14,7 +14,7 @@ social: true  # includes social icons at the bottom of the page
 
 Hello!
 
-I am currently a 3rd year PhD Student at the [University of Southern California](https://usc.edu), where I am advised by [Swabha Swayamdipta](https://dill-lab.github.io/).
+I am currently a 4th year PhD Student at the [University of Southern California](https://usc.edu).
 
 These days, I am very interested in LLM evaluation, characterizing LLM behaviors, and investigating the artifacts of preference tuning.
 
