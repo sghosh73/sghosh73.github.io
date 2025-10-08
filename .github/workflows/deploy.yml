@@ -21,7 +21,7 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.0.2'
-        bundler-cache: false  # disable caching to force fresh install
+        bundler-cache: false  # Turn off cache temporarily for debugging
 
     - name: Upgrade Bundler
       run: gem install bundler:2.4.22
@@ -32,13 +32,11 @@ jobs:
         gem list bundler
         bundle --version
 
-    - name: Bundler config tweaks
-      run: |
-        bundle config disable_default_gem true
+    - name: Install Ruby gems
+      run: bundle install
 
-    - name: Install deps
-      run: |
-        npm install -g mermaid.cli
+    - name: Install Node deps
+      run: npm install -g mermaid.cli
 
     - name: Setup deploy options
       id: setup
