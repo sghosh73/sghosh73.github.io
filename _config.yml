@@ -1,0 +1,97 @@
+# Site settings
+title: "Sayan Ghosh"
+first_name: Sayan
+last_name: Ghosh
+email: ghoshsay@usc.edu
+description: "Personal website for Sayan Ghosh"
+url: "https://sghosh73.github.io"
+baseurl: ""
+
+# Collections
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /news/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Include pages
+include: ['_pages']
+
+# Jekyll settings
+highlighter: rouge
+permalink: /blog/:year/:month/:day/:title/
+environment: prod
+
+# Plugins
+plugins:
+  - jekyll-scholar
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-katex
+  - jekyll-archives
+
+# Jekyll Scholar settings
+scholar:
+  last_name: Ghosh
+  first_name: [Sayan]
+  style: apa
+  locale: en
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+  bibtex_filters: [latex, smallcaps, superscript, hideCustomBibtex]
+  replace_strings: false
+  join_strings: false
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+  query: "@*"
+
+# CDN configurations for external stylesheets
+bootstrap:
+  version: "4.6.1"
+  integrity:
+    css: "sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY="
+
+mdb:
+  version: "4.20.0"
+  integrity:
+    css: "sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw="
+
+fontawesome:
+  version: "5.15.4"
+  integrity: "sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4="
+
+academicons:
+  version: "1.9.1"
+  integrity: "sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg="
+
+highlight_theme_light: "github"
+highlight_theme_dark: "github-dark"
+
+# Enable dark mode
+enable_darkmode: false
+
+# Jekyll Archives
+jekyll-archives:
+  enabled: [year, tags, categories]
+  layouts:
+    year: archive-year
+    tag: archive-tag
+    category: archive-category
+  permalinks:
+    year: '/blog/:year/'
+    tag: '/blog/tag/:name/'
+    category: '/blog/category/:name/'
+
+# KaTeX settings
+katex:
+  js_path: "assets"  # Path used to search for katex.min.js
+  rendering_options:
+    # Default KaTeX rendering options. See https://github.com/Khan/KaTeX#rendering-options
+    throw_error: false      # throwOnError - set to false if you want rendering to output error as text rather than a build error
+    error_color: "#cc0000"  # errorColor

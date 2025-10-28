@@ -1,0 +1,200 @@
+/* Publications-specific styling */
+.publications {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.publications .year {
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.publications .year:first-child {
+  margin-top: 0;
+}
+
+/* Bibliography entries styling */
+.publications .bibliography {
+  margin-bottom: 20px;
+}
+
+.publications .bibliography .author {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.publications .bibliography .title {
+  font-weight: 600;
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+.publications .bibliography .title:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+.publications .bibliography .venue {
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+.publications .bibliography .year {
+  color: #95a5a6;
+  font-weight: normal;
+  font-size: 1em;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links in bibliography */
+.publications .bibliography a {
+  color: #3498db;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.publications .bibliography a:hover {
+  text-decoration: underline;
+}
+
+/* PDF and other links */
+.publications .bibliography .links {
+  margin-top: 5px;
+}
+
+.publications .bibliography .links a {
+  font-size: 0.9em;
+  padding: 2px 6px;
+  background-color: #ecf0f1;
+  border-radius: 3px;
+  color: #2c3e50;
+}
+
+.publications .bibliography .links a:hover {
+  background-color: #bdc3c7;
+}
+
+/* Collapsible abstracts and bibtex */
+.publications .abstract {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-left: 3px solid #3498db;
+  border-radius: 3px;
+}
+
+.publications .abstract.show {
+  display: block;
+}
+
+.publications .bibtex {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-left: 3px solid #e74c3c;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  white-space: pre-wrap;
+}
+
+.publications .bibtex.show {
+  display: block;
+}
+
+/* Toggle buttons */
+.publications .toggle-btn {
+  background: none;
+  border: 1px solid #bdc3c7;
+  color: #7f8c8d;
+  padding: 4px 8px;
+  margin: 2px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.8em;
+  transition: all 0.2s ease;
+}
+
+.publications .toggle-btn:hover {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
+
+.publications .toggle-btn.active {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+/* Custom toggle buttons - match existing PDF button styling */
+.custom-toggle-buttons {
+  margin: 10px 0;
+}
+
+.custom-toggle-btn {
+  /* Match the existing btn btn-sm z-depth-0 styling */
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  margin: 0.125rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+  background-color: #6c757d;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.custom-toggle-btn:hover {
+  background-color: #5a6268;
+  color: #fff;
+  text-decoration: none;
+}
+
+.custom-toggle-btn.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.custom-content {
+  margin-top: 15px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-left: 4px solid #007bff;
+  border-radius: 0.25rem;
+  font-size: 0.95em;
+  line-height: 1.6;
+  /* Make content wider to prevent text overflow */
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.custom-content pre {
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 0.25rem;
+  overflow-x: auto;
+  font-size: 0.85em;
+  max-width: 100%;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.custom-content p {
+  margin-bottom: 1rem;
+  max-width: 100%;
+  word-wrap: break-word;
+}

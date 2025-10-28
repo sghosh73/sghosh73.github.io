@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"main.scss"
+	],
+	"sourcesContent": [
+		"@charset \"utf-8\";\n\n// Dimensions\n$max-content-width: 800px;\n\n// Basic styles - no complex imports needed\nbody {\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif;\n  line-height: 1.6;\n  color: #333;\n  max-width: $max-content-width;\n  margin: 0 auto;\n  padding: 20px;\n}\n"
+	],
+	"names": [],
+	"mappings": "AAMA,AAAA,IAAI,CAAC,EACH,WAAW,EAAE,iEAAiE,EAC9E,WAAW,EAAE,GAAG,EAChB,KAAK,EAAE,IAAI,EACX,SAAS,EAPS,KAAK,EAQvB,MAAM,EAAE,MAAM,EACd,OAAO,EAAE,IAAI,GACd"
+}
